@@ -1,0 +1,192 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* HEADER */
+header {
+    background: #006341;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* SECTIONS */
+section {
+    padding: 140px 100px;
+}
+
+/* HOME */
+#home {
+    color: white;
+    text-align: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://www.starbucksathome.com/sites/default/files/2024-10/Cappuccino_11zon.png') no-repeat center/cover;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+/* ABOUT */
+#about {
+    background: url('https://c0.wallpaperflare.com/preview/79/859/750/starbucks-coffee-building.jpg') no-repeat center center/cover;
+    position: relative;
+    color: white;
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-img {
+    width: 550px;
+    display: inline;
+    margin: auto;
+    border-radius: 15px;
+}
+
+p {
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+/* MENU SCROLL */
+.menu-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+.menu-container::-webkit-scrollbar {
+    height: 15px;
+}
+
+.menu-container::-webkit-scrollbar-thumb {
+    background: #006341;
+    border-radius: 10px;
+}
+
+.menu-item {
+    min-width: 300px;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+.menu-item:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.menu-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.menu-label {
+    font-weight: bold;
+}
+
+.menu-price {
+    color: gray;
+}
+
+/* ORDER FORM */
+#order-here form {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    width: 350px;
+    margin: auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+#order-here input,
+#order-here select {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+#order-here input:focus,
+#order-here select:focus {
+    border-color: #006341;
+    box-shadow: 0 0 5px rgba(0,99,65,0.5);
+}
+
+#order-here .order-btn {
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* BUTTONS */
+.order-btn {
+    padding: 20px 50px;
+    font-size: 20px;
+    background: #00703c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background: #004d2b;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 22px;
+    cursor: pointer;
+}
